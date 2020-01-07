@@ -1,4 +1,9 @@
+import Vue from 'vue';
 import '../style/app.scss';
 
-let msg = "hello";
-console.log(msg);
+const app = new Vue({
+    el: '#app',
+    data: {
+      message: 'Hello Vue!'
+    }
+});

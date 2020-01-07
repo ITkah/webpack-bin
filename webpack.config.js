@@ -33,8 +33,11 @@ module.exports = {
           inject: 'body'
       })
   ],
+  resolve: { alias: { 
+    vue: 'vue/dist/vue.esm.js' 
+  } },
   devServer: {  // configuration for webpack-dev-server
       contentBase: './src/public',  //source of static assets
-      port: 7700, // port to run dev-server
+      port: 3000, // port to run dev-server
   }
 };
